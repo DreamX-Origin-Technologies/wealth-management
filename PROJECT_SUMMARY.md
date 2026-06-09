@@ -1,4 +1,4 @@
-# Aegis Wealth Management - Setup & Future Development Guide
+# Cash Clarity Management - Setup & Future Development Guide
 
 This document provides a reference for the current frontend setup, architectural decisions, and an actionable roadmap for future feature enhancements.
 

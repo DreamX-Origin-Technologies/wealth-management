@@ -34,7 +34,7 @@ export default function Footer() {
             <Link to="/" className="flex items-center space-x-2 text-primary">
               <Landmark className="h-6 w-6 text-primary" />
               <span className="font-sans text-xl font-bold tracking-tight text-foreground">
-                Aegis Wealth
+                Cash Clarity
               </span>
             </Link>
             <p className="text-sm leading-relaxed">
@@ -83,7 +83,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2.5">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                <span>advisors@aegiswealth.com</span>
+                <span>advisors@cashclarity.com</span>
               </li>
             </ul>
           </div>
@@ -93,13 +93,13 @@ export default function Footer() {
         {/* Regulatory Disclosures & Copyright */}
         <div className="mt-12 pt-8 border-t border-border/40 text-xs space-y-4 text-muted-foreground/85 leading-relaxed">
           <p>
-            <strong>Regulatory Disclosures:</strong> Aegis Wealth Management is an SEC Registered Investment Advisor. Registration does not imply a certain level of skill or training. Advisory services are only offered to clients or prospective clients where Aegis Wealth and its representatives are properly licensed or exempt from licensure.
+            <strong>Regulatory Disclosures:</strong> Cash Clarity Management is an SEC Registered Investment Advisor. Registration does not imply a certain level of skill or training. Advisory services are only offered to clients or prospective clients where Cash Clarity and its representatives are properly licensed or exempt from licensure.
           </p>
           <p>
             Past performance is no guarantee of future results. All investments involve risk, including the possible loss of principal. Asset allocation and diversification do not assure a profit or protect against loss in declining markets.
           </p>
           <p className="pt-2 text-center text-[11px] text-muted-foreground/60">
-            &copy; {currentYear} Aegis Wealth Management LLC. All rights reserved.
+            &copy; {currentYear} Cash Clarity Management LLC. All rights reserved.
           </p>
         </div>
       </div>

@@ -4,12 +4,21 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-24 pb-20 lg:pt-32 lg:pb-28">
-      {/* Background Decorative Blobs */}
-      <div className="absolute top-1/4 left-1/2 -z-10 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/10 blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/3 left-1/4 -z-10 h-[300px] w-[300px] rounded-full bg-indigo-500/10 blur-[100px] pointer-events-none" />
-      <div className="absolute top-1/2 right-1/4 -z-10 h-[400px] w-[400px] rounded-full bg-emerald-500/5 blur-[120px] pointer-events-none" />
+      {/* Background decoration container with z-0 */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        {/* Premium Elegant Colorful Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-indigo-100/70 via-violet-100/40 to-transparent" />
 
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Modern Tech-Finance Blueprint/Grid Overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+
+        {/* Breathing Colorful Aurora Blobs */}
+        <div className="absolute top-0 left-1/4 h-[500px] w-[500px] rounded-full bg-violet-400/20 blur-[120px] animate-pulse" style={{ animationDuration: '8s' }} />
+        <div className="absolute top-12 right-1/4 h-[400px] w-[400px] rounded-full bg-indigo-400/20 blur-[100px] animate-pulse" style={{ animationDuration: '12s' }} />
+        <div className="absolute bottom-0 left-1/3 h-[300px] w-[300px] rounded-full bg-rose-300/20 blur-[100px]" />
+      </div>
+
+      <div className="relative z-10 container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Text Content */}
@@ -73,7 +82,7 @@ export default function Hero() {
                 <div className="flex justify-between items-center pb-4 border-b border-border/40">
                   <div>
                     <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Total Portfolio Value</p>
-                    <p className="text-3xl font-bold tracking-tight text-foreground mt-1">$2,485,910.42</p>
+                    <p className="text-3xl font-bold tracking-tight text-foreground mt-1">2,485,910.42</p>
                   </div>
                   <div className="bg-emerald-500/10 text-emerald-500 font-semibold px-2.5 py-1 rounded-full text-xs flex items-center">
                     <TrendingUp className="h-3.5 w-3.5 mr-1" />
@@ -84,11 +93,14 @@ export default function Hero() {
                 {/* Graph Representation */}
                 <div className="h-44 flex items-end justify-between gap-2 pt-4">
                   {[45, 52, 49, 63, 58, 70, 78, 72, 85, 92, 88, 100].map((val, idx) => (
-                    <div key={idx} className="flex-1 flex flex-col items-center gap-1.5">
-                      <div 
-                        className="w-full rounded-t bg-gradient-to-t from-primary/60 to-primary transition-all duration-1000 hover:opacity-85" 
-                        style={{ height: `${val}%` }} 
-                      />
+                    <div key={idx} className="flex-1 h-full flex flex-col justify-end items-center gap-1">
+                      {/* Bar Wrapper to resolve height percentage inside flexbox */}
+                      <div className="w-full flex-1 flex items-end">
+                        <div 
+                          className="w-full rounded-t bg-gradient-to-t from-primary/60 to-primary transition-all duration-300 hover:opacity-85" 
+                          style={{ height: `${val}%` }} 
+                        />
+                      </div>
                       <span className="text-[9px] font-semibold text-muted-foreground uppercase">{['J','F','M','A','M','J','J','A','S','O','N','D'][idx]}</span>
                     </div>
                   ))}
