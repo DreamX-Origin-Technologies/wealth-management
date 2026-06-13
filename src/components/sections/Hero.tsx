@@ -82,7 +82,7 @@ export default function Hero() {
                 <div className="flex justify-between items-center pb-4 border-b border-border/40">
                   <div>
                     <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Total Portfolio Value</p>
-                    <p className="text-3xl font-bold tracking-tight text-foreground mt-1">2,485,910.42</p>
+                    <p className="text-3xl font-bold tracking-tight text-foreground mt-1">₹2,48,59,110.42</p>
                   </div>
                   <div className="bg-emerald-500/10 text-emerald-500 font-semibold px-2.5 py-1 rounded-full text-xs flex items-center">
                     <TrendingUp className="h-3.5 w-3.5 mr-1" />
