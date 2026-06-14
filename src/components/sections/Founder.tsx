@@ -1,5 +1,4 @@
 import { Award, Globe, HeartHandshake, ShieldCheck } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const highlights = [
   {

@@ -200,7 +200,8 @@ export default function HeroPortfolioChart() {
         </p>
         <div className="grid grid-cols-3 gap-2">
           {PORTFOLIO_SERIES.map((series, index) => {
-            const isActive = false
+            const isActive = activeIndex === index;
+            const badge = (series as any).badge;
 
             return (
               <div
@@ -213,9 +214,9 @@ export default function HeroPortfolioChart() {
                     : "opacity-70 scale-100"
                 )}
               >
-                {series.badge && isActive && (
+                {badge && isActive && (
                   <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
-                    {series.badge}
+                    {badge}
                   </div>
                 )}
                 <p className={cn("text-[10px] uppercase font-semibold mt-1", series.labelClass)}>
