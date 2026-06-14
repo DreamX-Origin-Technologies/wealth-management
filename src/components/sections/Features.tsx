@@ -1,50 +1,50 @@
-import { Briefcase, LineChart, Percent, Coins, Lock, Users } from "lucide-react";
+import { ShieldCheck, LineChart, Umbrella, Calculator, GraduationCap, HelpingHand } from "lucide-react";
 
 export default function Features() {
   const features = [
     {
-      icon: <LineChart className="h-6 w-6 text-primary" />,
-      title: "Bespoke Portfolio Design",
-      desc: "Custom asset allocation tailored to your specific risk profile, liquidity needs, and long-term values."
+      icon: <ShieldCheck className="h-6 w-6 text-primary" />,
+      title: "LIC Policies",
+      desc: "Complete life, term, pension, and child plans tailored to provide solid safety nets for your family's future."
     },
     {
-      icon: <Percent className="h-6 w-6 text-indigo-600" />,
-      title: "Tax-Efficient Investing",
-      desc: "Automated tax-loss harvesting and custom location optimization to maximize your net take-home returns."
+      icon: <LineChart className="h-6 w-6 text-indigo-600" />,
+      title: "Mutual Fund Investments",
+      desc: "Capital growth via SIP and Lumpsum options, tailored to map your long-term goals and risk profile (ARN Holder)."
     },
     {
-      icon: <Coins className="h-6 w-6 text-emerald-600" />,
-      title: "Estate & Trust Planning",
-      desc: "Work alongside our experts to build generational wealth frameworks, private trusts, and philanthropic paths."
+      icon: <Umbrella className="h-6 w-6 text-emerald-600" />,
+      title: "Health & General Insurance",
+      desc: "Top-tier health insurance covers and general asset shielding to insulate your savings against medical emergencies."
     },
     {
-      icon: <Briefcase className="h-6 w-6 text-amber-600" />,
-      title: "Alternative Asset Access",
-      desc: "Direct access to exclusive real estate funds, private equity placements, and high-growth venture capital."
+      icon: <Calculator className="h-6 w-6 text-amber-600" />,
+      title: "Tax & Retirement Planning",
+      desc: "Optimize your tax outlays and build high-yield corpus growth strategies to enjoy a stress-free retired life."
     },
     {
-      icon: <Users className="h-6 w-6 text-pink-600" />,
-      title: "Dedicated Advisory Council",
-      desc: "Unlimited sessions with certified advisors who understand tax law, estate execution, and macroeconomics."
+      icon: <GraduationCap className="h-6 w-6 text-pink-600" />,
+      title: "LIC Agent Training & Recruitment",
+      desc: "Recruiting new LIC agents and providing professional training in Tiruvannamalai to build high-growth financial careers."
     },
     {
-      icon: <Lock className="h-6 w-6 text-blue-600" />,
-      title: "Institutional-Grade Security",
-      desc: "Multi-layered encryption, dual-factor authentication, and assets held securely with leading global custodians."
+      icon: <HelpingHand className="h-6 w-6 text-blue-600" />,
+      title: "Free Financial Consultation",
+      desc: "Expert audit of your current insurance policies, mutual fund health, and advice on wealth creation steps."
     }
   ];
 
   return (
-    <section id="features" className="py-20 sm:py-28 relative">
+    <section id="services" className="py-20 sm:py-28 relative">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-          <p className="text-sm font-semibold tracking-wider uppercase text-primary">Core Offerings</p>
+          <p className="text-sm font-semibold tracking-wider uppercase text-primary">Services Offered</p>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
-            Bespoke Services for High-Net-Worth Individuals
+            Complete Wealth Protection & Growth
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Every family and wealth portfolio is unique. We provide tailored solutions to protect, grow, and transfer your assets across generations.
+            I deliver holistic financial consultation designed to bring security, tax efficiency, and long-term asset growth to your family.
           </p>
         </div>
 
