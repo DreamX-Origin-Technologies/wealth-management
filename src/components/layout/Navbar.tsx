@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Landmark, ArrowRight } from "lucide-react";
+import { Menu, X, HeartPulse, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Services", href: "#features" },
-    { name: "Performance", href: "#stats" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "About Us", href: "#about" },
+    { name: "Services Offered", href: "#services" },
+    { name: "Achievements", href: "#achievements" },
+    { name: "Agent Training", href: "#training" },
+    { name: "About N. Sakthi", href: "#about" },
   ];
 
   return (
@@ -18,14 +18,14 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 text-primary">
-          <Landmark className="h-6 w-6 text-primary" />
-          <span className="font-sans text-xl font-bold tracking-tight">
-            Cash Clarity
+          <HeartPulse className="h-6 w-6 text-primary" />
+          <span className="font-sans text-lg sm:text-xl font-bold tracking-tight text-foreground">
+            Sakthi Financial Doctor
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -39,17 +39,20 @@ export default function Navbar() {
 
         {/* Actions */}
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost" size="sm">
-            Sign In
-          </Button>
-          <Button size="sm" className="group">
-            Get Started
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
+          <a href="tel:+919443243223" className="text-sm font-semibold text-muted-foreground hover:text-foreground flex items-center space-x-1">
+            <Phone className="h-4 w-4 text-primary" />
+            <span>+91 94432 43223</span>
+          </a>
+          <a href="#consultation">
+            <Button size="sm" className="group">
+              Free Consultation
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </a>
         </div>
 
         {/* Mobile menu button */}
-        <div className="flex md:hidden">
+        <div className="flex lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
@@ -65,7 +68,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden border-b border-border/40 bg-background" id="mobile-menu">
+        <div className="lg:hidden border-b border-border/40 bg-background" id="mobile-menu">
           <div className="space-y-1 px-4 pb-4 pt-2">
             {navLinks.map((link) => (
               <a
@@ -78,12 +81,17 @@ export default function Navbar() {
               </a>
             ))}
             <div className="mt-4 flex flex-col space-y-2 px-3">
-              <Button variant="outline" className="w-full">
-                Sign In
-              </Button>
-              <Button className="w-full">
-                Get Started
-              </Button>
+              <a href="tel:+919443243223" className="w-full">
+                <Button variant="outline" className="w-full flex items-center justify-center space-x-2">
+                  <Phone className="h-4 w-4 text-primary" />
+                  <span>Call +91 94432 43223</span>
+                </Button>
+              </a>
+              <a href="#consultation" onClick={() => setIsOpen(false)} className="w-full">
+                <Button className="w-full">
+                  Free Consultation
+                </Button>
+              </a>
             </div>
           </div>
         </div>

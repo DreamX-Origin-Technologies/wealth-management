@@ -1,27 +1,27 @@
 export default function Stats() {
   const stats = [
     { 
-      value: "₹1 Cr+", 
-      label: "Annual Premium Business", 
-      desc: "Generates an annual premium business exceeding ₹1 crore",
+      value: "37+", 
+      label: "Years of Experience", 
+      desc: "Over 37 years of professional advisory in insurance and mutual funds",
       gradient: "from-violet-500/10 to-indigo-500/10"
     },
     { 
       value: "3,500+", 
-      label: "Happy Customers", 
-      desc: "Trusted relationships built on transparency and performance",
+      label: "Happy Clients", 
+      desc: "Trusted relationships guiding thousands of families toward financial security",
       gradient: "from-emerald-500/10 to-teal-500/10"
     },
     { 
-      value: "35+", 
-      label: "Years of Experience", 
-      desc: "Expert partners coming from leading financial institutions",
+      value: "31 Yrs", 
+      label: "Chairman’s Club Member", 
+      desc: "Continuous elite ranking representing top performance in LIC of India",
       gradient: "from-amber-500/10 to-orange-500/10"
     },
     { 
-      value: "24/7", 
-      label: "Dedicated Client Support", 
-      desc: "Direct access to your advisor team whenever you need it",
+      value: "15 Yrs", 
+      label: "MDRT USA Member", 
+      desc: "Million Dollar Round Table consecutive years representing global advisor standards",
       gradient: "from-blue-500/10 to-sky-500/10"
     },
   ];

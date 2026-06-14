@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Landmark, Mail, Phone, MapPin } from "lucide-react";
+import { HeartPulse, Mail, Phone, MapPin } from "lucide-react";
 
 const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -32,13 +32,13 @@ export default function Footer() {
           {/* Brand & Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2 text-primary">
-              <Landmark className="h-6 w-6 text-primary" />
-              <span className="font-sans text-xl font-bold tracking-tight text-foreground">
-                Cash Clarity
+              <HeartPulse className="h-6 w-6 text-primary" />
+              <span className="font-sans text-xl font-bold tracking-tight text-foreground animate-pulse" style={{ animationDuration: '4s' }}>
+                Sakthi FinDoc
               </span>
             </Link>
             <p className="text-sm leading-relaxed">
-              Securing generational legacies through custom financial strategies, tax optimization, and direct access to alternative markets.
+              Securing family legacies, optimizing retirement portfolios, and training the next generation of professional LIC advisors.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="hover:text-foreground transition-colors"><TwitterIcon className="h-5 w-5" /></a>
@@ -51,39 +51,39 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Services</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="#features" className="hover:text-foreground transition-colors">Portfolio Management</a></li>
-              <li><a href="#features" className="hover:text-foreground transition-colors">Tax Strategy</a></li>
-              <li><a href="#features" className="hover:text-foreground transition-colors">Estate & Trust Execution</a></li>
-              <li><a href="#features" className="hover:text-foreground transition-colors">Alternative Allocations</a></li>
+              <li><a href="#services" className="hover:text-foreground transition-colors">LIC Policies (Life/Pension)</a></li>
+              <li><a href="#services" className="hover:text-foreground transition-colors">Mutual Fund Investments</a></li>
+              <li><a href="#services" className="hover:text-foreground transition-colors">Health & General Insurance</a></li>
+              <li><a href="#services" className="hover:text-foreground transition-colors">Tax & Retirement Planning</a></li>
             </ul>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Resources</h4>
+            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Other Portals</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="#stats" className="hover:text-foreground transition-colors">Firm Performance</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Client Logins</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Forms & Disclosures</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Insights & Articles</a></li>
+              <li><a href="#training" className="hover:text-foreground transition-colors">Agent Recruitment Centre</a></li>
+              <li><a href="#consultation" className="hover:text-foreground transition-colors">Free Financial Consultation</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Art of Living Programs</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Acupuncture Healing Details</a></li>
             </ul>
           </div>
 
           {/* Contact Details */}
           <div className="space-y-4">
-            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Advisor Head Office</h4>
+            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Office Address</h4>
             <ul className="space-y-3.5 text-sm">
               <li className="flex items-start space-x-2.5">
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <span>600 Montgomery St, 41st Floor,<br />San Francisco, CA 94111</span>
+                <span>64/19, Gandhi Nagar Bye Pass Road,<br />Opp. Sakthi Vinayagar Koil,<br />Tiruvannamalai – 606601</span>
               </li>
               <li className="flex items-center space-x-2.5">
                 <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                <span>+1 (415) 555-0199</span>
+                <span>+91 94432 43223</span>
               </li>
               <li className="flex items-center space-x-2.5">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                <span>advisors@cashclarity.com</span>
+                <span>sakthiaol@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -93,13 +93,13 @@ export default function Footer() {
         {/* Regulatory Disclosures & Copyright */}
         <div className="mt-12 pt-8 border-t border-border/40 text-xs space-y-4 text-muted-foreground/85 leading-relaxed">
           <p>
-            <strong>Regulatory Disclosures:</strong> Cash Clarity Management is an SEC Registered Investment Advisor. Registration does not imply a certain level of skill or training. Advisory services are only offered to clients or prospective clients where Cash Clarity and its representatives are properly licensed or exempt from licensure.
+            <strong>Regulatory Disclosures:</strong> N. SAKTHI (M.A., CIS., DME., FChFP., D.Acu., CIP) is an IRDAI Certified Chief Life Insurance Advisor (LIC of India) and a registered Mutual Fund Distributor (ARN Holder). Mutual Fund investments are subject to market risks; please read all scheme-related documents carefully before investing. Insurance is the subject matter of solicitation.
           </p>
           <p>
-            Past performance is no guarantee of future results. All investments involve risk, including the possible loss of principal. Asset allocation and diversification do not assure a profit or protect against loss in declining markets.
+            Past performance of mutual funds does not guarantee future results. Insurance policies carry specific terms, exclusions, and conditions. All advisements are conducted under ethical fiduciary standards matching Chairman's Club and MDRT USA guidelines.
           </p>
           <p className="pt-2 text-center text-[11px] text-muted-foreground/60">
-            &copy; {currentYear} Cash Clarity Management LLC. All rights reserved.
+            &copy; {currentYear} Sakthi Financial Doctor. All rights reserved.
           </p>
         </div>
       </div>
