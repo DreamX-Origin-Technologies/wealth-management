@@ -1,4 +1,4 @@
-# Sakthi Financial Doctor - Setup & Reference Guide
+# Cash clarity - Setup & Reference Guide
 
 This document provides a reference for the localized frontend setup, architectural decisions, and N. Sakthi's service offerings.
 
@@ -6,7 +6,7 @@ This document provides a reference for the localized frontend setup, architectur
 
 ## What Has Been Built So Far
 
-We have customized the React landing page for **N. Sakthi - Sakthi Financial Doctor**, structuring the branding, stats, and offerings according to his professional credentials.
+We have customized the React landing page for **N. Sakthi - Cash clarity**, structuring the branding, stats, and offerings according to his professional credentials.
 
 ### 1. Technology Stack
 *   **Vite + React + TypeScript:** For fast builds and type safety.
@@ -45,7 +45,7 @@ d:\Projects\wealth-management\
 ```
 
 ### 3. Localization Details Applied
-*   **Brand Identity:** Updated all references from "Cash Clarity" to "Sakthi Financial Doctor".
+*   **Brand Identity:** Updated all references to **Cash clarity** across the landing page (navbar, footer, copyright).
 *   **Achievements Panel:** Localized to show N. Sakthi's 37+ Years of Experience, 3,500+ Happy Clients, 31 Years Chairman's Club Member, and 15 Years MDRT USA Member.
 *   **LIC and Mutual Fund Alignment:** Custom layout for portfolios (Equities/Mutual Funds - 45%, LIC Policies - 35%, Health & Gen Insurance - 20%).
 *   **Contact & Footers:** Added address and phone details (+91 94432 43223, Tiruvannamalai) and Indian insurance/mutual funds compliance disclosures.

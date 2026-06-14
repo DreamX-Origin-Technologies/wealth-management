@@ -14,7 +14,7 @@ export default function Stats() {
     },
     { 
       value: "31 Yrs", 
-      label: "Chairman’s Club Member", 
+      label: "Chairman's Club Member", 
       desc: "Continuous elite ranking representing top performance in LIC of India",
       gradient: "from-amber-500/10 to-orange-500/10"
     },
@@ -27,7 +27,7 @@ export default function Stats() {
   ];
 
   return (
-    <section id="stats" className="py-20 sm:py-28 bg-white border-y border-border/40 relative overflow-hidden">
+    <section id="achievements" className="py-20 sm:py-28 bg-white border-y border-border/40 relative overflow-hidden">
       {/* Background Decorative Blob for texture */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-80 w-[600px] rounded-full bg-indigo-50/30 blur-[100px] pointer-events-none" />
       

@@ -34,7 +34,7 @@ export default function Footer() {
             <Link to="/" className="flex items-center space-x-2 text-primary">
               <HeartPulse className="h-6 w-6 text-primary" />
               <span className="font-sans text-xl font-bold tracking-tight text-foreground animate-pulse" style={{ animationDuration: '4s' }}>
-                Sakthi FinDoc
+                Cash clarity
               </span>
             </Link>
             <p className="text-sm leading-relaxed">
@@ -99,7 +99,7 @@ export default function Footer() {
             Past performance of mutual funds does not guarantee future results. Insurance policies carry specific terms, exclusions, and conditions. All advisements are conducted under ethical fiduciary standards matching Chairman's Club and MDRT USA guidelines.
           </p>
           <p className="pt-2 text-center text-[11px] text-muted-foreground/60">
-            &copy; {currentYear} Sakthi Financial Doctor. All rights reserved.
+            &copy; {currentYear} Cash clarity. All rights reserved.
           </p>
         </div>
       </div>

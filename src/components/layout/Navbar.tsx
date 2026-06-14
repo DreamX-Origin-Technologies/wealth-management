@@ -20,7 +20,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center space-x-2 text-primary">
           <HeartPulse className="h-6 w-6 text-primary" />
           <span className="font-sans text-lg sm:text-xl font-bold tracking-tight text-foreground">
-            Sakthi Financial Doctor
+            Cash clarity
           </span>
         </Link>
 
