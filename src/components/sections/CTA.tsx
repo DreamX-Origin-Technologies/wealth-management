@@ -11,9 +11,14 @@ export default function CTA() {
   });
   const [submitted, setSubmitted] = useState(false);
 
+  const WA_PHONE = "919443243223";
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (formData.name && formData.phone) {
+      const message = `Hello, my name is ${formData.name}. I'm interested in ${formData.interest}. Email: ${formData.email}. Mobile: ${formData.phone}.`;
+      const url = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank", "noreferrer");
       setSubmitted(true);
     }
   };
