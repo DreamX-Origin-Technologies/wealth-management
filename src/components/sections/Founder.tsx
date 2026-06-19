@@ -1,4 +1,5 @@
 import { Award, Globe, HeartHandshake, ShieldCheck } from "lucide-react";
+import { PixelImage } from "@/components/ui/pixel-image"
 
 const highlights = [
   {
@@ -39,10 +40,19 @@ export default function Founder() {
 
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="rounded-[2rem] border border-border/40 bg-white p-8 shadow-xl shadow-amber-100/50">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-muted-foreground">N. SAKTHI</p>
-            <p className="mt-3 text-2xl font-extrabold tracking-tight text-foreground">
-              M.A., CIS., DME., FChFP., D.Acu., CIP
-            </p>
+            <div className="flex flex-col items-center gap-5 rounded-[2rem] border border-border/40 p-6 shadow-sm sm:flex-col sm:items-center">
+               <PixelImage
+      src="/Founder.png"
+      customGrid={{ rows: 4, cols: 6 }}
+      grayscaleAnimation
+    />
+              <div className="space-y-3 text-center sm:text-left">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-muted-foreground">N. SAKTHI</p>
+                <p className="text-2xl font-extrabold tracking-tight text-foreground">
+                  M.A., CIS., DME., FChFP., D.Acu., CIP
+                </p>
+              </div>
+            </div>
 
             <div className="mt-8 space-y-4 rounded-3xl border border-amber-200/70 bg-amber-50/80 p-6">
               <p className="text-sm font-semibold text-foreground">Professional Titles</p>
@@ -53,16 +63,6 @@ export default function Founder() {
                 <li>📍 LIC Agent Recruitment & Training Centre – Tiruvannamalai</li>
               </ul>
             </div>
-
-            <div className="mt-8 space-y-3">
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Since joining LIC in December 1988, Sakthi N has built a globally respected advisory practice that combines consistency, empathy, and deep technical knowledge.
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                He leads two LIC service offices supported by five assistants, allowing high-touch support for clients and efficient policy management.
-              </p>
-            </div>
-
           </div>
 
           <div className="space-y-6">
@@ -72,8 +72,14 @@ export default function Founder() {
                 <p>
                   Sakthi N is a highly experienced insurance professional with over 35 years in life, general, and health insurance. He has maintained exceptional performance through LIC Chairman’s Club and global recognition via MDRT USA.
                 </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                Since joining LIC in December 1988, Sakthi N has built a globally respected advisory practice that combines consistency, empathy, and deep technical knowledge.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                He leads two LIC service offices supported by five assistants, allowing high-touch support for clients and efficient policy management.
+              </p>
                 <p>
-                  Managing more than 3,500 clients and ₹1 crore+ annual premium business, he combines disciplined portfolio guidance with practical protection planning for families across Tamil Nadu.
+                  He is managing more than 3,500 clients and ₹1 crore+ annual premium business, he combines disciplined portfolio guidance with practical protection planning for families across Tamil Nadu.
                 </p>
                 <p>
                   Beyond advisory work, Sakthi serves as an Art of Living faculty for 13 years and continues to pursue social service, training, and mentorship in the financial services community.

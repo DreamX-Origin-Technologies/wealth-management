@@ -5,21 +5,29 @@ import MotionCarousel from "@/components/ui/MotionCarousel";
 const testimonials = [
   {
     quote:
-      "Sakthi Sir transformed our family’s protection plan with a practical, caring approach. His advice gave us much-needed confidence in our LIC and mutual fund decisions.",
-    name: "R. Priya",
+      `Thank you so much for being a wonderful wealth advisor. Because of your guidance, I have not only learned how to manage my money wisely but also taken better care of my health.
+With your support, I am saving more and feeling stronger both financially and physically. I truly appreciate your advice, which has helped me find balance and confidence in life.
+Thank you once again for showing me the right path, Sir.`,
+    name: "Sri.E.Ramajayam",
     title: "Client since 2014",
   },
   {
     quote:
-      "The guidance from Sakthi helped me secure the right health cover and build a steady long-term investment path. I appreciate his attention to detail and follow-through.",
+      "Thank you so much for your valuable financial advice. Because of your guidance, I have started saving more money and making better decisions in my life.",
     name: "S. Karthik",
     title: "Business Owner, Tiruvannamalai",
   },
   {
     quote:
-      "He explains every policy clearly and never rushes decisions. Exceptional advisor with the right mix of empathy and expertise.",
+      `Thank you so much for your valuable guidance and sincere advice in financial planning. Your knowledge, patience, and support have made a meaningful difference in my understanding of managing finances wisely.I truly appreciate your time, care, and the way you simplified complex topics for me. Your guidance is not just professional—it's inspiring.Wishing you continued success, good health, and happiness always. May you keep guiding many more lives towards financial wisdom and stability.With heartfelt thanks.`,
     name: "M. Sudha",
     title: "Home-maker",
+  },
+  {
+    quote:
+      `Thank you so much for your valuable financial advice. Because of your guidance, I have started saving more money and making better decisions in my life.I truly appreciate your support and the right path you showed me. Your advice has made a real difference, and I'm grateful for your time and effort.`,
+    name: "Jan",
+    title: "Business Owner",
   },
 ];
 
