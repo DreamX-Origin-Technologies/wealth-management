@@ -50,10 +50,12 @@ export default function Features() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
           {features.map((feature, idx) => (
-            <div 
-              key={idx} 
-              className="rounded-2xl border border-border/40 bg-card/50 p-8 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-primary/10 group"
-            >
+            <div key={idx} className="relative rounded-2xl border border-border/40 bg-card/50 p-8 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-primary/10 group overflow-hidden">
+              <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-60 transition-opacity">
+                <div className="absolute -left-24 -top-24 h-48 w-48 rounded-full bg-gradient-to-tr from-primary/40 to-transparent blur-3xl mix-blend-screen" />
+                <div className="absolute -right-24 -bottom-24 h-48 w-48 rounded-full bg-gradient-to-bl from-amber-200/30 to-transparent blur-3xl mix-blend-screen" />
+              </div>
+
               <div className="inline-flex items-center justify-center p-3 rounded-xl bg-accent/40 mb-6 group-hover:scale-110 transition-transform">
                 {feature.icon}
               </div>

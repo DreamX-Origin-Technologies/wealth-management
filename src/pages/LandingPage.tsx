@@ -5,6 +5,7 @@ import Founder from "@/components/sections/Founder";
 import Features from "@/components/sections/Features";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/layout/Footer";
+import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 
 export default function LandingPage() {
   return (
@@ -34,6 +35,7 @@ export default function LandingPage() {
           <CTA />
         </main>
         <Footer />
+        <WhatsAppFloat />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import MotionCarousel from "@/components/ui/MotionCarousel";
 
 const testimonials = [
   {
@@ -36,30 +37,32 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid gap-6 xl:grid-cols-3">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.name} className="rounded-[2rem] border border-border/50 bg-white/90 p-8 shadow-lg shadow-amber-100/50">
-              <div className="flex items-center gap-2 mb-5 text-amber-500">
-                {[...Array(5)].map((_, index) => (
-                  <Star key={index} className="h-4 w-4" />
-                ))}
+        <div className="max-w-5xl mx-auto">
+          <MotionCarousel>
+            {testimonials.map((testimonial) => (
+              <div key={testimonial.name} className="rounded-[2rem] border border-border/50 bg-white/90 p-8 shadow-lg shadow-amber-100/50">
+                <div className="flex items-center gap-2 mb-5 text-amber-500">
+                  {[...Array(5)].map((_, index) => (
+                    <Star key={index} className="h-4 w-4" />
+                  ))}
+                </div>
+                <p className="text-base leading-8 text-muted-foreground">“{testimonial.quote}”</p>
+                <div className="mt-6 border-t border-border/50 pt-5">
+                  <p className="text-sm font-semibold text-foreground">{testimonial.name}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                </div>
               </div>
-              <p className="text-base leading-8 text-muted-foreground">“{testimonial.quote}”</p>
-              <div className="mt-6 border-t border-border/50 pt-5">
-                <p className="text-sm font-semibold text-foreground">{testimonial.name}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </MotionCarousel>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-center gap-4 text-center">
           <p className="max-w-2xl text-sm text-muted-foreground">
             Join the community of families building stable futures with objective advice, clear risk planning, and responsive service.
           </p>
-          <Button size="lg" className="bg-amber-600 text-white hover:bg-amber-700">
+          {/* <Button size="lg" className="bg-amber-600 text-white hover:bg-amber-700">
             Book Your Free Review
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

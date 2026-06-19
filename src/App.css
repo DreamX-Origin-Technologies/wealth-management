@@ -182,3 +182,24 @@
     border-right-color: var(--border);
   }
 }
+
+
+.whatsapp-chat-button {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 25px;
+    background-color: #4dc247;
+    box-shadow: #0006 2px 2px 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.whatsapp-logo {
+  width: 46px;
+  height: 46px;
+  fill: rgb(255, 255, 255);
+  z-index: 1;
+}

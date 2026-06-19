@@ -15,7 +15,6 @@ const PORTFOLIO_SERIES = [
     label: "Mutual Funds",
     allocation: "45%",
     subtitle: "Equities & SIP",
-    badge: "Top Pick",
     color: "var(--chart-1)",
     cardClass:
       "from-indigo-500/15 via-violet-500/10 to-indigo-600/20 border-indigo-500/30 ring-indigo-500/20",
@@ -29,6 +28,7 @@ const PORTFOLIO_SERIES = [
     label: "LIC Policies",
     allocation: "35%",
     subtitle: "Life & Pension",
+    badge: "Top Pick",
     color: "var(--chart-2)",
     cardClass:
       "from-emerald-500/15 via-teal-500/10 to-emerald-600/20 border-emerald-500/30 ring-emerald-500/20",
