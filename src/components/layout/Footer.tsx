@@ -33,12 +33,12 @@ export default function Footer() {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2 text-primary">
               <HeartPulse className="h-6 w-6 text-primary" />
-              <span className="font-sans text-xl font-bold tracking-tight text-foreground animate-pulse" style={{ animationDuration: '4s' }}>
-                Cash clarity
+              <span className="font-sans text-xl font-bold tracking-tight text-foreground">
+                SAKTHI FINANCIAL DOCTOR
               </span>
             </Link>
             <p className="text-sm leading-relaxed">
-              Securing family legacies, optimizing retirement portfolios, and training the next generation of professional LIC advisors.
+              Protecting families, building wealth, and inspiring lives through personalized financial guidance and service.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="hover:text-foreground transition-colors"><TwitterIcon className="h-5 w-5" /></a>
@@ -99,7 +99,7 @@ export default function Footer() {
             Past performance of mutual funds does not guarantee future results. Insurance policies carry specific terms, exclusions, and conditions. All advisements are conducted under ethical fiduciary standards matching Chairman's Club and MDRT USA guidelines.
           </p>
           <p className="pt-2 text-center text-[11px] text-muted-foreground/60">
-            &copy; {currentYear} Cash clarity. All rights reserved.
+            &copy; {currentYear} Sakthi Financial Doctor. All rights reserved.
           </p>
         </div>
       </div>

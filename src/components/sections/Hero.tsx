@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, TrendingUp, Award, Users } from "lucide-react";
+import { Shield, TrendingUp, Award, Users, HeartPulse } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HeroPortfolioChart from "@/components/sections/HeroPortfolioChart";
 
@@ -30,34 +30,32 @@ export default function Hero() {
               <span className="font-semibold">LIC Chairman's Club Member — 31 Years</span>
             </div>
 
-            {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground leading-[1.1]">
-              Your journey to
+            <div className="space-y-3">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground leading-[1.1]">
+                SAKTHI
+                <br className="hidden sm:inline" />
+                <span className="bg-gradient-to-r from-amber-500 via-rose-500 to-emerald-600 bg-clip-text text-transparent">
+                  FINANCIAL DOCTOR
+                </span>
+              </h1>
+              <p className="text-xl sm:text-2xl font-semibold text-foreground/90">
+                38 Years of Trust & Financial Protection
+              </p>
+              <p className="max-w-2xl mx-auto lg:mx-0 text-lg text-muted-foreground leading-relaxed">
+                Your family’s trusted guide for life insurance, mutual funds, retirement planning, health protection, and long-term wealth creation.
+              </p>
+            </div>
 
-              <br className="hidden sm:inline" />
-              <span className="bg-gradient-to-r from-amber-500 via-rose-500 to-emerald-600 bg-clip-text text-transparent">
-                Financial Independence
-              </span>
-              <br className="hidden sm:inline" />
-              starts here 
-            </h1>
-
-            {/* Subtext */}
-            {/* <p className="max-w-2xl mx-auto lg:mx-0 text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              With over 37 years of professional experience, having guided thousands of families toward financial security and peace of mind, I will share the essence of my experience and learnings through this platform for your benefit.
-            </p> */}
-
-            {/* Call to Actions */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <a href="#consultation" className="w-full sm:w-auto">
+              <a href="/financial-doctor" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full h-12 px-8 text-base group">
-                  Free Consultation
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  Meet Your Financial Doctor
+                  <HeartPulse className="ml-2 h-5 w-5" />
                 </Button>
               </a>
-              <a href="#services" className="w-full sm:w-auto">
+              <a href="#consultation" className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full h-12 px-8 text-base hover:bg-muted/50">
-                  Explore Services
+                  Book a Consultation
                 </Button>
               </a>
             </div>

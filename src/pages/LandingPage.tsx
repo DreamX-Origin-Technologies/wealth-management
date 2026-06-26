@@ -1,41 +1,56 @@
-import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
+import OwnerSection from "@/components/sections/OwnerSection";
 import Testimonials from "@/components/sections/Testimonials";
 import Founder from "@/components/sections/Founder";
 import Features from "@/components/sections/Features";
 import CTA from "@/components/sections/CTA";
-import Footer from "@/components/layout/Footer";
-import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col font-sans relative overflow-hidden">
-      {/* Background Elements Container (z-0 sits on top of parent's background color) */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        {/* Premium Global Background Grid Lines */}
-        {/* <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808006_1px,transparent_1px),linear-gradient(to_bottom,#80808006_1px,transparent_1px)] bg-[size:32px_32px]" /> */}
-        
-        {/* Cohesive Global Color-Shifting Blur Orbs */}
-        {/* <div className="absolute top-[5%] left-[-15%] h-[600px] w-[600px] rounded-full bg-amber-200/25 blur-[140px]" /> */}
-        {/* <div className="absolute top-[25%] right-[-15%] h-[700px] w-[700px] rounded-full bg-rose-200/25 blur-[150px]" /> */}
-        {/* <div className="absolute top-[50%] left-[10%] h-[600px] w-[600px] rounded-full bg-emerald-100/20 blur-[130px]" /> */}
-        {/* <div className="absolute top-[75%] right-[5%] h-[600px] w-[600px] rounded-full bg-rose-100/20 blur-[140px]" /> */}
-        {/* <div className="absolute top-[90%] left-[-5%] h-[500px] w-[500px] rounded-full bg-blue-100/20 blur-[120px]" /> */}
-      </div>
-
-      {/* Content wrapper with z-10 to stay on top of the background elements */}
-      <div className="relative z-10 flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-1">
-          <Hero />
-          {/* <Stats /> */}
-          <Features />
-          <Founder />
-          <Testimonials />
-          <CTA />
-        </main>
-        <Footer />
-        <WhatsAppFloat />
+    <div className="relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none z-0" />
+      <div className="relative z-10">
+        <Hero />
+        <OwnerSection />
+        <section className="px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  title: "Agent Recruitment",
+                  description: "Start a premium LIC career with mentorship, field training and leadership guidance.",
+                  href: "/agent-recruitment",
+                },
+                {
+                  title: "Life & Health",
+                  description: "Secure your family with health, term and critical illness protection solutions.",
+                  href: "/life-health",
+                },
+                {
+                  title: "Service Definition",
+                  description: "Explore our full service portfolio including mutual funds, retirement and wealth planning.",
+                  href: "/services",
+                },
+              ].map((card) => (
+                <a
+                  key={card.title}
+                  href={card.href}
+                  className="group rounded-[2rem] border border-border/40 bg-white/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-600">{card.title}</p>
+                  <p className="mt-4 text-base leading-7 text-muted-foreground">{card.description}</p>
+                  <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary">
+                    Learn more
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+        <Features />
+        {/* <Founder /> */}
+        <Testimonials />
+        <CTA />
       </div>
     </div>
   );

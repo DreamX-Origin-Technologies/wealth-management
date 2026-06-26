@@ -36,10 +36,10 @@ export default function CTA() {
 
           <div className="text-center max-w-2xl mx-auto space-y-6">
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
-              Book a Free Financial Consultation
+              Meet Your Financial Doctor
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Plan your retirement, secure family life coverage, grow wealth via mutual funds, or join our professional LIC agency training program.
+              Book a private consultation for insurance protection, mutual fund planning, retirement readiness, or family wealth guidance.
             </p>
 
             {submitted ? (

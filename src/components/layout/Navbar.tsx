@@ -7,10 +7,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Services Offered", href: "#services" },
-    { name: "Achievements", href: "#achievements" },
-    { name: "Agent Training", href: "#training" },
-    { name: "About N. Sakthi", href: "#about" },
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Life & Health", href: "/life-health" },
+    { name: "Agent Recruitment", href: "/agent-recruitment" },
+    { name: "Financial Doctor", href: "/financial-doctor" },
   ];
 
   return (
@@ -20,20 +21,20 @@ export default function Navbar() {
         <Link to="/" className="flex items-center space-x-2 text-primary">
           <HeartPulse className="h-6 w-6 text-primary" />
           <span className="font-sans text-lg sm:text-xl font-bold tracking-tight text-foreground">
-            Cash clarity
+            SAKTHI FINANCIAL DOCTOR
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center space-x-6">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -43,12 +44,12 @@ export default function Navbar() {
             <Phone className="h-4 w-4 text-primary" />
             <span>+91 94432 43223</span>
           </a>
-          <a href="#consultation">
+          <Link to="/financial-doctor">
             <Button size="sm" className="group">
               Free Consultation
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -71,14 +72,14 @@ export default function Navbar() {
         <div className="lg:hidden border-b border-border/40 bg-background" id="mobile-menu">
           <div className="space-y-1 px-4 pb-4 pt-2">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 onClick={() => setIsOpen(false)}
                 className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-accent hover:text-foreground"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <div className="mt-4 flex flex-col space-y-2 px-3">
               <a href="tel:+919443243223" className="w-full">
@@ -87,11 +88,11 @@ export default function Navbar() {
                   <span>Call +91 94432 43223</span>
                 </Button>
               </a>
-              <a href="#consultation" onClick={() => setIsOpen(false)} className="w-full">
+              <Link to="/financial-doctor" onClick={() => setIsOpen(false)} className="w-full">
                 <Button className="w-full">
                   Free Consultation
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
