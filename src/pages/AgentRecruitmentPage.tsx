@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Award, HeartHandshake, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function AgentRecruitmentPage() {
+  useEffect(() => {
+    document.title = "Join as LIC Agent | Sakthi Financial Doctor";
+  }, []);
+
   return (
     <div className="relative overflow-hidden bg-[linear-gradient(135deg,#f8fafc_0%,#eef2ff_40%,#f8fafc_100%)] text-foreground">
       <section className="px-4 py-16 sm:px-6 lg:px-8">

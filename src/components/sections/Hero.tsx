@@ -1,4 +1,5 @@
 import { Shield, TrendingUp, Award, Users, HeartPulse } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import HeroPortfolioChart from "@/components/sections/HeroPortfolioChart";
 
@@ -47,17 +48,29 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <a href="/financial-doctor" className="w-full sm:w-auto">
+              <Link to="/financial-doctor" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full h-12 px-8 text-base group">
                   Meet Your Financial Doctor
                   <HeartPulse className="ml-2 h-5 w-5" />
                 </Button>
-              </a>
+              </Link>
               <a href="#consultation" className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full h-12 px-8 text-base hover:bg-muted/50">
                   Book a Consultation
                 </Button>
               </a>
+            </div>
+
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+              <Link to="/services" className="rounded-full border border-border/50 bg-white/90 px-4 py-2 text-sm font-semibold text-primary shadow-sm transition hover:border-primary hover:bg-primary/5">
+                Explore Services
+              </Link>
+              <Link to="/life-health" className="rounded-full border border-border/50 bg-white/90 px-4 py-2 text-sm font-semibold text-primary shadow-sm transition hover:border-primary hover:bg-primary/5">
+                Life & Health Protection
+              </Link>
+              <Link to="/agent-recruitment" className="rounded-full border border-border/50 bg-white/90 px-4 py-2 text-sm font-semibold text-primary shadow-sm transition hover:border-primary hover:bg-primary/5">
+                Join Agent Team
+              </Link>
             </div>
 
             {/* Features list */}

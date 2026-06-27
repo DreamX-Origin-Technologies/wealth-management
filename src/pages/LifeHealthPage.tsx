@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function LifeHealthPage() {
+  useEffect(() => {
+    document.title = "Life & Health Protection | Sakthi Financial Doctor";
+  }, []);
+
   return (
     <div className="relative overflow-hidden bg-[linear-gradient(135deg,#f7f9fc_0%,#eef4ff_40%,#f8fbfb_100%)] text-foreground">
       <section className="px-4 py-16 sm:px-6 lg:px-8">
@@ -25,7 +30,14 @@ export default function LifeHealthPage() {
                 ))}
               </div>
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button className="w-full sm:w-auto">Get Your Protection Plan</Button>
+                <a
+                  href="https://wa.me/919443243223?text=Hello%20Sakthi%20Financial%20Doctor%2C%20I%20would%20like%20to%20get%20a%20life%20and%20health%20protection%20plan."
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-full sm:w-auto"
+                >
+                  <Button className="w-full">Get Your Protection Plan</Button>
+                </a>
                 <a href="tel:+919443243223" className="w-full sm:w-auto">
                   <Button variant="outline" className="w-full">Call +91 94432 43223</Button>
                 </a>

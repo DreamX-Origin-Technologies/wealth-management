@@ -51,10 +51,10 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Services</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="#services" className="hover:text-foreground transition-colors">LIC Policies (Life/Pension)</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">Mutual Fund Investments</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">Health & General Insurance</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">Tax & Retirement Planning</a></li>
+              <li><Link to="/life-health" className="hover:text-foreground transition-colors">LIC Policies (Life/Pension)</Link></li>
+              <li><Link to="/services" className="hover:text-foreground transition-colors">Mutual Fund Investments</Link></li>
+              <li><Link to="/life-health" className="hover:text-foreground transition-colors">Health & General Insurance</Link></li>
+              <li><Link to="/services" className="hover:text-foreground transition-colors">Tax & Retirement Planning</Link></li>
             </ul>
           </div>
 
@@ -62,10 +62,10 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Other Portals</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="#training" className="hover:text-foreground transition-colors">Agent Recruitment Centre</a></li>
-              <li><a href="#consultation" className="hover:text-foreground transition-colors">Free Financial Consultation</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Art of Living Programs</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Acupuncture Healing Details</a></li>
+              <li><Link to="/agent-recruitment" className="hover:text-foreground transition-colors">Agent Recruitment Centre</Link></li>
+              <li><Link to="/financial-doctor" className="hover:text-foreground transition-colors">Free Financial Consultation</Link></li>
+              <li><Link to="/financial-doctor" className="hover:text-foreground transition-colors">Art of Living Programs</Link></li>
+              <li><Link to="/financial-doctor" className="hover:text-foreground transition-colors">Acupuncture Healing Details</Link></li>
             </ul>
           </div>
 

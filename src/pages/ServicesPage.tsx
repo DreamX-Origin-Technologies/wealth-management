@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { BarChart3, CalendarCheck, HelpCircle, LifeBuoy, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -6,30 +8,39 @@ const services = [
     icon: <BarChart3 className="h-5 w-5 text-amber-600" />,
     title: "Mutual Fund Investments",
     description: "Goal-based SIP prescriptions for education, retirement, and wealth creation.",
+    href: "/financial-doctor",
   },
   {
     icon: <LifeBuoy className="h-5 w-5 text-emerald-600" />,
     title: "Protection Planning",
     description: "Life, health, and general insurance to make your finances secure.",
+    href: "/life-health",
   },
   {
     icon: <CalendarCheck className="h-5 w-5 text-rose-600" />,
     title: "Retirement Planning",
     description: "A future freedom clinic for long-term income and tax efficiency.",
+    href: "/financial-doctor",
   },
   {
     icon: <Users className="h-5 w-5 text-sky-600" />,
     title: "Agent Training",
     description: "Build your career as a LIC professional with mentorship and real field support.",
+    href: "/agent-recruitment",
   },
   {
     icon: <HelpCircle className="h-5 w-5 text-violet-600" />,
     title: "Financial Health Checkup",
     description: "A comprehensive diagnostic review to identify gaps and strengths.",
+    href: "/financial-doctor",
   },
 ];
 
 export default function ServicesPage() {
+  useEffect(() => {
+    document.title = "Services | Sakthi Financial Doctor";
+  }, []);
+
   return (
     <div className="relative overflow-hidden bg-[linear-gradient(135deg,#fbfbff_0%,#f7f8fd_45%,#eef6ff_100%)] text-foreground">
       <section className="px-4 py-16 sm:px-6 lg:px-8">
@@ -47,7 +58,9 @@ export default function ServicesPage() {
                 </div>
                 <h2 className="mt-5 text-xl font-semibold text-foreground">{service.title}</h2>
                 <p className="mt-3 text-sm leading-7 text-muted-foreground">{service.description}</p>
-                <Button variant="outline" className="mt-6">Learn more</Button>
+                <Link to={service.href}>
+                  <Button variant="outline" className="mt-6 w-full sm:w-auto">Learn more</Button>
+                </Link>
               </div>
             ))}
           </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Menu, X, HeartPulse, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -28,13 +28,19 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-6">
           {navLinks.map((link) => (
-            <Link
+            <NavLink
               key={link.name}
               to={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className={({ isActive }) =>
+                `text-sm font-medium transition-colors ${
+                  isActive
+                    ? "text-foreground font-semibold underline underline-offset-4 decoration-amber-500 decoration-2"
+                    : "text-muted-foreground hover:text-foreground"
+                }`
+              }
             >
               {link.name}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
@@ -69,17 +75,23 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="lg:hidden border-b border-border/40 bg-background" id="mobile-menu">
-          <div className="space-y-1 px-4 pb-4 pt-2">
+        <div className="lg:hidden absolute top-16 left-0 w-full border-b border-border/40 bg-background/95 backdrop-blur-md shadow-lg z-50 animate-in fade-in slide-in-from-top-4 duration-200" id="mobile-menu">
+          <div className="space-y-1 px-4 pb-6 pt-3">
             {navLinks.map((link) => (
-              <Link
+              <NavLink
                 key={link.name}
                 to={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-accent hover:text-foreground"
+                className={({ isActive }) =>
+                  `block rounded-md px-3 py-2 text-base font-medium transition ${
+                    isActive
+                      ? "bg-accent text-foreground"
+                      : "text-muted-foreground hover:bg-accent hover:text-foreground"
+                  }`
+                }
               >
                 {link.name}
-              </Link>
+              </NavLink>
             ))}
             <div className="mt-4 flex flex-col space-y-2 px-3">
               <a href="tel:+919443243223" className="w-full">

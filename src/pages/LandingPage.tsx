@@ -1,17 +1,23 @@
+import { useEffect } from "react";
 import Hero from "@/components/sections/Hero";
-import OwnerSection from "@/components/sections/OwnerSection";
-import Testimonials from "@/components/sections/Testimonials";
+import Stats from "@/components/sections/Stats";
 import Founder from "@/components/sections/Founder";
+import Testimonials from "@/components/sections/Testimonials";
 import Features from "@/components/sections/Features";
 import CTA from "@/components/sections/CTA";
 
 export default function LandingPage() {
+  useEffect(() => {
+    document.title = "Sakthi Financial Doctor | Cash Clarity & Family Protection";
+  }, []);
+
   return (
     <div className="relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none z-0" />
       <div className="relative z-10">
         <Hero />
-        <OwnerSection />
+        <Stats />
+        <Founder />
         <section className="px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -48,7 +54,6 @@ export default function LandingPage() {
           </div>
         </section>
         <Features />
-        {/* <Founder /> */}
         <Testimonials />
         <CTA />
       </div>
