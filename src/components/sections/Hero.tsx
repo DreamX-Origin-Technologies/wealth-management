@@ -1,4 +1,4 @@
-import { Shield, TrendingUp, Award, Users, HeartPulse } from "lucide-react";
+import { Shield, TrendingUp, Award, Users, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import HeroPortfolioChart from "@/components/sections/HeroPortfolioChart";
@@ -33,9 +33,9 @@ export default function Hero() {
 
             <div className="space-y-3">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground leading-[1.1]">
-                SAKTHI
+                <span className="inline-block mr-2">SAKTHI</span>
                 <br className="hidden sm:inline" />
-                <span className="bg-gradient-to-r from-amber-500 via-rose-500 to-emerald-600 bg-clip-text text-transparent">
+                <span className="inline-block sm:ml-2 bg-gradient-to-r from-amber-500 via-rose-500 to-emerald-600 bg-clip-text text-transparent">
                   FINANCIAL DOCTOR
                 </span>
               </h1>
@@ -51,7 +51,7 @@ export default function Hero() {
               <Link to="/financial-doctor" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full h-12 px-8 text-base group">
                   Meet Your Financial Doctor
-                  <HeartPulse className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/consultation" className="w-full sm:w-auto">

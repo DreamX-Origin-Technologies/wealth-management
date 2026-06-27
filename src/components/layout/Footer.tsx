@@ -65,7 +65,6 @@ export default function Footer() {
               <li><Link to="/agent-recruitment" className="hover:text-foreground transition-colors">Agent Recruitment Centre</Link></li>
               <li><Link to="/consultation" className="hover:text-foreground transition-colors">Free Financial Consultation</Link></li>
               <li><Link to="/financial-doctor" className="hover:text-foreground transition-colors">Art of Living Programs</Link></li>
-              <li><Link to="/financial-doctor" className="hover:text-foreground transition-colors">Acupuncture Healing Details</Link></li>
             </ul>
           </div>
 
@@ -75,15 +74,26 @@ export default function Footer() {
             <ul className="space-y-3.5 text-sm">
               <li className="flex items-start space-x-2.5">
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <span>64/19, Gandhi Nagar Bye Pass Road,<br />Opp. Sakthi Vinayagar Koil,<br />Tiruvannamalai – 606601</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=64%2F19%2C+Gandhi+Nagar+Bye+Pass+Road%2C+Opp.+Sakthi+Vinayagar+Koil%2C+Tiruvannamalai+606601"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm leading-relaxed hover:text-foreground transition-colors"
+                >
+                  64/19, Gandhi Nagar Bye Pass Road,<br />Opp. Sakthi Vinayagar Koil,<br />Tiruvannamalai – 606601
+                </a>
               </li>
               <li className="flex items-center space-x-2.5">
                 <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                <span>+91 94432 43223</span>
+                <a href="tel:+919443243223" className="hover:text-foreground transition-colors">
+                  +91 94432 43223
+                </a>
               </li>
               <li className="flex items-center space-x-2.5">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                <span>sakthiaol@gmail.com</span>
+                <a href="mailto:sakthiaol@gmail.com" className="hover:text-foreground transition-colors">
+                  sakthiaol@gmail.com
+                </a>
               </li>
             </ul>
           </div>
