@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X, HeartPulse, Phone, ArrowRight } from "lucide-react";
+import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
@@ -18,8 +18,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2 text-primary">
-          <HeartPulse className="h-6 w-6 text-primary" />
+        <Link to="/" className="flex items-center space-x-3">
+          <img src="/logo-custom.jpeg" alt="Sakthi Financial Doctor" className="h-8 w-auto" />
           <span className="font-sans text-lg sm:text-xl font-bold tracking-tight text-foreground">
             SAKTHI FINANCIAL DOCTOR
           </span>

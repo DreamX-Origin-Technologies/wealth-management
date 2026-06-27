@@ -186,7 +186,9 @@ export default function FinancialDoctorPage() {
                 </div>
                 <BadgeCheck className="h-7 w-7 text-amber-600" />
               </div>
-              <PixelImage src="/Founder.png" customGrid={{ rows: 4, cols: 6 }} grayscaleAnimation />
+              <div className="flex justify-center">
+                <PixelImage src="/Founder.png" customGrid={{ rows: 4, cols: 6 }} grayscaleAnimation />
+              </div>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 <div className="rounded-2xl border border-border/40 bg-slate-50 p-4">
                   <p className="text-sm font-semibold text-foreground">MDRT – 15 Years</p>

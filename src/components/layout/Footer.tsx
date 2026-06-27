@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HeartPulse, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -31,8 +31,8 @@ export default function Footer() {
           
           {/* Brand & Info */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center space-x-2 text-primary">
-              <HeartPulse className="h-6 w-6 text-primary" />
+            <Link to="/" className="flex items-center space-x-3">
+              <img src="/logo-custom.png" alt="Sakthi Financial Doctor" className="h-8 w-auto" />
               <span className="font-sans text-xl font-bold tracking-tight text-foreground">
                 SAKTHI FINANCIAL DOCTOR
               </span>

@@ -61,14 +61,6 @@ export default function LifeHealthPage() {
                   </div>
                 ))}
               </div>
-              <div className="mt-10 rounded-[2rem] border border-border/40 bg-amber-50/80 p-8 shadow-sm">
-                <p className="text-sm font-semibold uppercase tracking-[0.35em] text-emerald-700">Our process</p>
-                <div className="mt-4 space-y-4 text-sm text-muted-foreground leading-7">
-                  <p><strong>Personalized assessment</strong> — we begin by reviewing your family’s protection needs, health records, and financial goals.</p>
-                  <p><strong>Solution design</strong> — a customized package of term plans, health insurance, and savings strategies is prepared with clarity and affordability in mind.</p>
-                  <p><strong>Reliable service</strong> — from application support to claim assistance, our team stays connected at every stage.</p>
-                </div>
-              </div>
               <div className="flex flex-col gap-4 sm:flex-row">
                 <a
                   href="https://wa.me/919443243223?text=Hello%20Sakthi%20Financial%20Doctor%2C%20I%20would%20like%20to%20get%20a%20life%20and%20health%20protection%20plan."
@@ -104,6 +96,14 @@ export default function LifeHealthPage() {
                 <div className="rounded-[1.75rem] border border-white/70 bg-white p-5 shadow-sm">
                   <p className="text-sm font-semibold text-foreground">Family safety review</p>
                   <p className="mt-3 text-sm text-muted-foreground leading-7">A focused review of your current insurance portfolio, protection gaps, and opportunities to strengthen cover for your spouse, children, and parents.</p>
+                </div>
+              </div>
+              <div className="mt-10 rounded-[2rem] border border-border/40 bg-amber-50/80 p-8 shadow-sm">
+                <p className="text-sm font-semibold uppercase tracking-[0.35em] text-emerald-700">Our process</p>
+                <div className="mt-4 space-y-4 text-sm text-muted-foreground leading-7">
+                  <p><strong>Personalized assessment</strong> — we begin by reviewing your family’s protection needs, health records, and financial goals.</p>
+                  <p><strong>Solution design</strong> — a customized package of term plans, health insurance, and savings strategies is prepared with clarity and affordability in mind.</p>
+                  <p><strong>Reliable service</strong> — from application support to claim assistance, our team stays connected at every stage.</p>
                 </div>
               </div>
             </div>
