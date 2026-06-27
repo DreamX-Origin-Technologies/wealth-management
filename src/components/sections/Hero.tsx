@@ -54,11 +54,11 @@ export default function Hero() {
                   <HeartPulse className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <a href="#consultation" className="w-full sm:w-auto">
+              <Link to="/consultation" className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full h-12 px-8 text-base hover:bg-muted/50">
                   Book a Consultation
                 </Button>
-              </a>
+              </Link>
             </div>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3 lg:justify-start">

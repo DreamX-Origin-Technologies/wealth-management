@@ -50,7 +50,7 @@ export default function Navbar() {
             <Phone className="h-4 w-4 text-primary" />
             <span>+91 94432 43223</span>
           </a>
-          <Link to="/financial-doctor">
+          <Link to="/consultation">
             <Button size="sm" className="group">
               Free Consultation
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

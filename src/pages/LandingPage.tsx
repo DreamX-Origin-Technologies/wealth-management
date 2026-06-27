@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
 import Founder from "@/components/sections/Founder";
@@ -38,9 +39,9 @@ export default function LandingPage() {
                   href: "/services",
                 },
               ].map((card) => (
-                <a
+                <Link
                   key={card.title}
-                  href={card.href}
+                  to={card.href}
                   className="group rounded-[2rem] border border-border/40 bg-white/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                 >
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-600">{card.title}</p>
@@ -48,7 +49,7 @@ export default function LandingPage() {
                   <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary">
                     Learn more
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

@@ -14,6 +14,7 @@ import {
   Stethoscope,
   Wallet,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { PixelImage } from "@/components/ui/pixel-image";
 
@@ -534,9 +535,9 @@ export default function FinancialDoctorPage() {
                 <p>📞 +91 93619 95323</p>
                 <p>📧 sakthiaol@gmail.com</p>
               </div>
-              <a href="https://wa.me/919443243223?text=Hello%20Sakthi%20Financial%20Doctor%2C%20I%20would%20like%20a%20financial%20health%20checkup." target="_blank" rel="noreferrer">
+              <Link to="/consultation" className="inline-block">
                 <Button className="mt-6">Book Your Consultation</Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

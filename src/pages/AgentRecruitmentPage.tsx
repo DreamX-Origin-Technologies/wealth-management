@@ -57,6 +57,49 @@ export default function AgentRecruitmentPage() {
               </div>
             </div>
           </div>
+
+          <div className="mt-12 grid gap-8 lg:grid-cols-2">
+            <div className="rounded-[2rem] border border-border/50 bg-slate-50 p-8 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-amber-600">Your Path to a Strong Career</p>
+              <h2 className="mt-4 text-3xl font-bold text-foreground">Learn, earn, and lead</h2>
+              <p className="mt-4 text-base leading-7 text-muted-foreground">This program is for motivated professionals who want a respected LIC career, dependable income, and the confidence to advise clients intelligently.</p>
+              <ul className="mt-8 space-y-4 text-sm leading-7 text-muted-foreground">
+                <li>• Structured field training with real client engagement.</li>
+                <li>• Marketing guidance for generating consistent leads.</li>
+                <li>• Policy servicing, claims support, and client care skills.</li>
+                <li>• Mentorship from a senior LIC advisor with national recognition.</li>
+              </ul>
+            </div>
+
+            <div className="rounded-[2rem] border border-amber-200/70 bg-gradient-to-br from-amber-50 via-white to-slate-50 p-8 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-amber-700">How it works</p>
+              <div className="mt-6 space-y-5">
+                {[
+                  {
+                    title: "Join the Academy",
+                    description: "Apply through the recruitment portal and attend the foundational onboarding session.",
+                  },
+                  {
+                    title: "Learn the LIC way",
+                    description: "Master policy structuring, claim follow-up, and trusted advisory communication.",
+                  },
+                  {
+                    title: "Serve your clients",
+                    description: "Build a book of high-quality clients and support them with empathy.",
+                  },
+                  {
+                    title: "Grow with guidance",
+                    description: "Receive ongoing mentorship, goal reviews, and leadership coaching.",
+                  },
+                ].map((step) => (
+                  <div key={step.title} className="rounded-3xl border border-border/40 bg-white p-5 shadow-sm">
+                    <p className="text-sm font-semibold text-foreground">{step.title}</p>
+                    <p className="mt-2 text-sm text-muted-foreground">{step.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

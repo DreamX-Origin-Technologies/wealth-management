@@ -63,7 +63,7 @@ export default function Footer() {
             <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Other Portals</h4>
             <ul className="space-y-2.5 text-sm">
               <li><Link to="/agent-recruitment" className="hover:text-foreground transition-colors">Agent Recruitment Centre</Link></li>
-              <li><Link to="/financial-doctor" className="hover:text-foreground transition-colors">Free Financial Consultation</Link></li>
+              <li><Link to="/consultation" className="hover:text-foreground transition-colors">Free Financial Consultation</Link></li>
               <li><Link to="/financial-doctor" className="hover:text-foreground transition-colors">Art of Living Programs</Link></li>
               <li><Link to="/financial-doctor" className="hover:text-foreground transition-colors">Acupuncture Healing Details</Link></li>
             </ul>
