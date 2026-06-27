@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3">
-          <img src="/logo-custom.jpeg" alt="Sakthi Financial Doctor" className="h-8 w-auto" />
+          <img src="/logo-custom.png" alt="Sakthi Financial Doctor" className="h-10 w-auto sm:h-12" />
           <span className="font-sans text-lg sm:text-xl font-bold tracking-tight text-foreground">
             SAKTHI FINANCIAL DOCTOR
           </span>

@@ -32,7 +32,7 @@ export default function Footer() {
           {/* Brand & Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-3">
-              <img src="/logo-custom.png" alt="Sakthi Financial Doctor" className="h-8 w-auto" />
+              <img src="/logo-custom.png" alt="Sakthi Financial Doctor" className="h-10 w-auto sm:h-12" />
               <span className="font-sans text-xl font-bold tracking-tight text-foreground">
                 SAKTHI FINANCIAL DOCTOR
               </span>
