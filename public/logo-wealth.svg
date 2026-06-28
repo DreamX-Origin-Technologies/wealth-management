@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0ea5a4"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield shape -->
+  <path d="M64 8c18 0 32 10 36 24 0 28-14 44-36 60-22-16-36-32-36-60C32 18 46 8 64 8z" fill="url(#g)" stroke="#0b1220" stroke-opacity="0.06"/>
+  <!-- Up arrow / growth bar -->
+  <g transform="translate(44,46)">
+    <rect x="0" y="18" width="8" height="18" rx="2" fill="#fff" opacity="0.92" />
+    <rect x="12" y="8" width="8" height="28" rx="2" fill="#fff" opacity="0.92" />
+    <rect x="24" y="0" width="8" height="36" rx="2" fill="#fff" opacity="0.92" />
+    <path d="M38 2 L46 2 L46 -6 L64 16 L46 38 L46 30 L38 30 L38 2 Z" fill="#fff" opacity="0.92" transform="translate(-6,-6) scale(0.8)"/>
+  </g>
+</svg>

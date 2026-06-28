@@ -31,10 +31,10 @@ export default function Founder() {
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <p className="text-sm font-semibold tracking-[0.32em] uppercase text-amber-600">Founder & Advisor</p>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
-            N. SAKTHI — A Lifetime of Insurance Leadership
+            SAKTHI FINANCIAL DOCTOR — A Lifetime of Insurance Leadership
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            A distinguished LIC advisor, certified mutual fund distributor, and financial consultant with over 35 years of service across life, health, and general insurance.
+            A distinguished LIC advisor, certified mutual fund distributor, and financial consultant with over 37+ years of service across life, health, and general insurance.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function Founder() {
       grayscaleAnimation
     />
               <div className="space-y-3 text-center sm:text-left">
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-muted-foreground">N. SAKTHI</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-muted-foreground">SAKTHI FINANCIAL DOCTOR</p>
                 <p className="text-2xl font-extrabold tracking-tight text-foreground">
                   M.A., CIS., DME., FChFP., D.Acu., CIP
                 </p>
@@ -57,10 +57,10 @@ export default function Founder() {
             <div className="mt-8 space-y-4 rounded-3xl border border-amber-200/70 bg-amber-50/80 p-6">
               <p className="text-sm font-semibold text-foreground">Professional Titles</p>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>📍 Chief Life Insurance Advisor – LIC of India</li>
-                <li>📍 Certified Mutual Fund Distributor (ARN Holder)</li>
-                <li>📍 Financial Consultant | Health & General Insurance Specialist</li>
-                <li>📍 LIC Agent Recruitment & Training Centre – Tiruvannamalai</li>
+                <li>Chief Life Insurance Advisor – LIC of India</li>
+                <li>Certified Mutual Fund Distributor (ARN Holder)</li>
+                <li>Financial Consultant | Health & General Insurance Specialist</li>
+                <li>LIC Agent Recruitment & Training Centre – Tiruvannamalai</li>
               </ul>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function Founder() {
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-foreground">Founder Story</p>
               <div className="mt-4 space-y-4 text-sm leading-7 text-muted-foreground">
                 <p>
-                  Sakthi N is a highly experienced insurance professional with over 35 years in life, general, and health insurance. He has maintained exceptional performance through LIC Chairman’s Club and global recognition via MDRT USA.
+                  Sakthi Financial Doctor is a highly experienced insurance professional with over 37+ years in life, general, and health insurance. He has maintained exceptional performance through LIC Chairman’s Club and global recognition via MDRT USA.
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                 Since joining LIC in December 1988, Sakthi N has built a globally respected advisory practice that combines consistency, empathy, and deep technical knowledge.

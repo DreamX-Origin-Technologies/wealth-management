@@ -1,39 +1,46 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Menu, X, HeartPulse, Phone, ArrowRight } from "lucide-react";
+import { Link, NavLink } from "react-router-dom";
+import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Services Offered", href: "#services" },
-    { name: "Achievements", href: "#achievements" },
-    { name: "Agent Training", href: "#training" },
-    { name: "About N. Sakthi", href: "#about" },
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Life & Health", href: "/life-health" },
+    { name: "Agent Recruitment", href: "/agent-recruitment" },
+    { name: "Sakthi Financial Doctor", href: "/financial-doctor" },
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2 text-primary">
-          <HeartPulse className="h-6 w-6 text-primary" />
+        <Link to="/" className="flex items-center space-x-3">
+          <img src="/logo-custom.png" alt="Sakthi Financial Doctor" className="h-10 w-auto sm:h-12" />
           <span className="font-sans text-lg sm:text-xl font-bold tracking-tight text-foreground">
-            Cash clarity
+            SAKTHI FINANCIAL DOCTOR
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center space-x-6">
           {navLinks.map((link) => (
-            <a
+            <NavLink
               key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              to={link.href}
+              className={({ isActive }) =>
+                `text-sm font-medium transition-colors ${
+                  isActive
+                    ? "text-foreground font-semibold underline underline-offset-4 decoration-amber-500 decoration-2"
+                    : "text-muted-foreground hover:text-foreground"
+                }`
+              }
             >
               {link.name}
-            </a>
+            </NavLink>
           ))}
         </nav>
 
@@ -43,12 +50,12 @@ export default function Navbar() {
             <Phone className="h-4 w-4 text-primary" />
             <span>+91 94432 43223</span>
           </a>
-          <a href="#consultation">
+          <Link to="/consultation">
             <Button size="sm" className="group">
               Free Consultation
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -68,17 +75,23 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="lg:hidden border-b border-border/40 bg-background" id="mobile-menu">
-          <div className="space-y-1 px-4 pb-4 pt-2">
+        <div className="lg:hidden absolute top-16 left-0 w-full border-b border-border/40 bg-background/95 backdrop-blur-md shadow-lg z-50 animate-in fade-in slide-in-from-top-4 duration-200" id="mobile-menu">
+          <div className="space-y-1 px-4 pb-6 pt-3">
             {navLinks.map((link) => (
-              <a
+              <NavLink
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block rounded-md px-3 py-2 text-base font-medium text-muted-foreground hover:bg-accent hover:text-foreground"
+                className={({ isActive }) =>
+                  `block rounded-md px-3 py-2 text-base font-medium transition ${
+                    isActive
+                      ? "bg-accent text-foreground"
+                      : "text-muted-foreground hover:bg-accent hover:text-foreground"
+                  }`
+                }
               >
                 {link.name}
-              </a>
+              </NavLink>
             ))}
             <div className="mt-4 flex flex-col space-y-2 px-3">
               <a href="tel:+919443243223" className="w-full">
@@ -87,11 +100,11 @@ export default function Navbar() {
                   <span>Call +91 94432 43223</span>
                 </Button>
               </a>
-              <a href="#consultation" onClick={() => setIsOpen(false)} className="w-full">
+              <Link to="/financial-doctor" onClick={() => setIsOpen(false)} className="w-full">
                 <Button className="w-full">
                   Free Consultation
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
