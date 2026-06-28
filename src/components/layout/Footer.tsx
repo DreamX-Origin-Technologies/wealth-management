@@ -96,6 +96,17 @@ export default function Footer() {
           </p>
           <p className="pt-2 text-center text-[11px] text-muted-foreground/60">
             &copy; {currentYear} Sakthi Financial Doctor. All rights reserved.
+            
+            <span className="mx-1">|</span>
+            
+            <a
+              href="https://www.dreamxorigin.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              Developed by Dream X Origin
+            </a>
           </p>
         </div>
       </div>
