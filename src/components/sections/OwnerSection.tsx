@@ -11,9 +11,9 @@ export default function OwnerSection() {
         </div>
 
         <div className="space-y-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-amber-600">Meet the Owner</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-amber-600">Know the Owner</p>
           <h2 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-            N. Sakthi — Founder & Financial Doctor
+            Sakthi Financial Doctor — Founder & Financial Doctor
           </h2>
           <p className="text-lg leading-8 text-muted-foreground">
             With 38 years of trusted service, Sakthi leads the firm with a vision that blends protection, wealth creation, and spiritual wellbeing.

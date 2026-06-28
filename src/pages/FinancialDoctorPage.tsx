@@ -104,7 +104,7 @@ export default function FinancialDoctorPage() {
   }, [monthlySip, years]);
 
   useEffect(() => {
-    document.title = "Financial Doctor | N. Sakthi Wealth Advisory";
+    document.title = "Financial Doctor | Sakthi Financial Doctor Wealth Advisory";
     const targets = { years: 38, families: 3500, assured: 100, mdrt: 15, chairman: 31 };
     const duration = 1400;
     const start = performance.now();
@@ -213,7 +213,7 @@ export default function FinancialDoctorPage() {
               <div className="rounded-[2rem] border border-amber-200/70 bg-white p-8 shadow-sm">
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground">Founder Story</p>
                 <div className="mt-5 space-y-4 text-base leading-7 text-muted-foreground">
-                  <p>Born in 1969 in Na. Pudur Village near Tiruvannamalai, N. Sakthi grew up with simple values, strong ethics, and a deep desire to help people.</p>
+                  <p>Born in 1969 in Na. Pudur Village near Tiruvannamalai, Sakthi Financial Doctor grew up with simple values, strong ethics, and a deep desire to help people.</p>
                   <p>He joined LIC of India in December 1988 with the mission to protect families and create financial security. Today, that mission has become a life’s purpose.</p>
                   <p>Alongside his professional journey, he serves as an Art of Living faculty and continues to inspire families through service, spirituality, and financial education.</p>
                 </div>
@@ -499,7 +499,7 @@ export default function FinancialDoctorPage() {
               </div>
               <div className="mt-5 space-y-4 text-base leading-7 text-muted-foreground">
                 <p>True wealth is not only money. It is health, harmony, protection, and purpose. That belief shapes every consultation and every recommendation.</p>
-                <p>From family protection to wealth creation, N. Sakthi brings both professional clarity and personal compassion into every conversation.</p>
+                <p>From family protection to wealth creation, Sakthi Financial Doctor brings both professional clarity and personal compassion into every conversation.</p>
               </div>
               <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
                 <p className="text-sm font-semibold text-foreground">“My mission is not merely to sell insurance, but to protect families, create wealth, and inspire lives.”</p>
@@ -513,7 +513,7 @@ export default function FinancialDoctorPage() {
         <div className="mx-auto max-w-7xl rounded-[2rem] border border-emerald-200/70 bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 p-8 text-white shadow-[0_30px_80px_-20px_rgba(2,6,23,0.6)] sm:p-10 lg:p-12">
           <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">Meet Your Financial Doctor</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">Know Your Financial Doctor</p>
               <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Your financial health matters.</h2>
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300">Protect your family, secure your future, create lasting wealth, and begin your journey towards financial freedom today.</p>
               <div className="mt-6 flex flex-wrap gap-3">

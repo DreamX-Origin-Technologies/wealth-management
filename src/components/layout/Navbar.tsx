@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: "Services", href: "/services" },
     { name: "Life & Health", href: "/life-health" },
     { name: "Agent Recruitment", href: "/agent-recruitment" },
-    { name: "Financial Doctor", href: "/financial-doctor" },
+    { name: "Sakthi Financial Doctor", href: "/financial-doctor" },
   ];
 
   return (

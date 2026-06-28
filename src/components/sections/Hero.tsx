@@ -40,7 +40,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="text-xl sm:text-2xl font-semibold text-foreground/90">
-                38 Years of Trust & Financial Protection
+                37+ Years of Trust & Financial Protection
               </p>
               <p className="max-w-2xl mx-auto lg:mx-0 text-lg text-muted-foreground leading-relaxed">
                 Your family’s trusted guide for life insurance, mutual funds, retirement planning, health protection, and long-term wealth creation.
@@ -49,27 +49,27 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <Link to="/financial-doctor" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full h-12 px-8 text-base group">
-                  Meet Your Financial Doctor
+                <Button size="lg" className="w-full h-12 px-8 text-base group shadow-[0_16px_40px_-14px_rgba(15,23,42,0.35)]">
+                  Know Your Financial Doctor
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/consultation" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="w-full h-12 px-8 text-base hover:bg-muted/50">
+                <Button size="lg" variant="outline" className="w-full h-12 px-8 text-base hover:bg-muted/50 shadow-[0_10px_24px_-14px_rgba(15,23,42,0.2)]">
                   Book a Consultation
                 </Button>
               </Link>
             </div>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
-              <Link to="/services" className="rounded-full border border-border/50 bg-white/90 px-4 py-2 text-sm font-semibold text-primary shadow-sm transition hover:border-primary hover:bg-primary/5">
+              <Link to="/services" className="rounded-full border border-border/50 bg-white/90 px-4 py-2.5 text-sm font-semibold text-primary shadow-[0_10px_24px_-14px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/5">
                 Explore Services
               </Link>
-              <Link to="/life-health" className="rounded-full border border-border/50 bg-white/90 px-4 py-2 text-sm font-semibold text-primary shadow-sm transition hover:border-primary hover:bg-primary/5">
+              <Link to="/life-health" className="rounded-full border border-border/50 bg-white/90 px-4 py-2.5 text-sm font-semibold text-primary shadow-[0_10px_24px_-14px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/5">
                 Life & Health Protection
               </Link>
-              <Link to="/agent-recruitment" className="rounded-full border border-border/50 bg-white/90 px-4 py-2 text-sm font-semibold text-primary shadow-sm transition hover:border-primary hover:bg-primary/5">
-                Join Agent Team
+              <Link to="/agent-recruitment" className="rounded-full border border-border/50 bg-white/90 px-4 py-2.5 text-sm font-semibold text-primary shadow-[0_10px_24px_-14px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/5">
+                Agent Recruitment
               </Link>
             </div>
 

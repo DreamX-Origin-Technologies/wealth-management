@@ -36,7 +36,7 @@ export default function ConsultationPage() {
                 Consultation Booking
               </div>
               <div className="space-y-4">
-                <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">Meet Your Financial Doctor</h1>
+                <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">Know Your Financial Doctor</h1>
                 <p className="text-lg leading-8 text-muted-foreground">Book a private consultation for insurance protection, mutual funds, retirement readiness, or family wealth guidance.</p>
               </div>
               <div className="grid gap-4 sm:grid-cols-2">

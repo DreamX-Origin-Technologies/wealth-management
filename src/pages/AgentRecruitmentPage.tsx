@@ -32,7 +32,7 @@ export default function AgentRecruitmentPage() {
               </div>
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Link to="/financial-doctor" className="w-full sm:w-auto">
-                  <Button className="w-full">Meet Your Financial Doctor</Button>
+                  <Button className="w-full">Know Your Financial Doctor</Button>
                 </Link>
                 <a href="tel:+919443243223" className="w-full sm:w-auto">
                   <Button variant="outline" className="w-full">Call to Join</Button>

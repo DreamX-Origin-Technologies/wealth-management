@@ -1,26 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 
-const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-  </svg>
-);
-
-const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect width="4" height="12" x="2" y="9" />
-    <circle cx="4" cy="4" r="2" />
-  </svg>
-);
-
-const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-  </svg>
-);
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -40,31 +20,37 @@ export default function Footer() {
             <p className="text-sm leading-relaxed">
               Protecting families, building wealth, and inspiring lives through personalized financial guidance and service.
             </p>
-            <div className="flex space-x-4 pt-2">
-              <a href="#" className="hover:text-foreground transition-colors"><TwitterIcon className="h-5 w-5" /></a>
-              <a href="#" className="hover:text-foreground transition-colors"><LinkedinIcon className="h-5 w-5" /></a>
-              <a href="#" className="hover:text-foreground transition-colors"><FacebookIcon className="h-5 w-5" /></a>
-            </div>
+            <a
+              href="https://wa.me/919443243223?text=Hello%20Sakthi%20Financial%20Doctor%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-semibold text-foreground shadow-[0_10px_24px_-14px_rgba(15,23,42,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/10"
+            >
+              Chat on WhatsApp
+            </a>
           </div>
 
           {/* Service Links */}
           <div className="space-y-4">
-            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Services</h4>
+            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Our Services</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><Link to="/life-health" className="hover:text-foreground transition-colors">LIC Policies (Life/Pension)</Link></li>
+              <li><Link to="/life-health" className="hover:text-foreground transition-colors">LIC Policies & Life Protection</Link></li>
               <li><Link to="/services" className="hover:text-foreground transition-colors">Mutual Fund Investments</Link></li>
+              <li><Link to="/services" className="hover:text-foreground transition-colors">Vehicle Insurance Solutions</Link></li>
               <li><Link to="/life-health" className="hover:text-foreground transition-colors">Health & General Insurance</Link></li>
               <li><Link to="/services" className="hover:text-foreground transition-colors">Tax & Retirement Planning</Link></li>
+              <li><Link to="/consultation" className="hover:text-foreground transition-colors">Free Financial Consultation</Link></li>
             </ul>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Other Portals</h4>
+            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><Link to="/agent-recruitment" className="hover:text-foreground transition-colors">Agent Recruitment Centre</Link></li>
-              <li><Link to="/consultation" className="hover:text-foreground transition-colors">Free Financial Consultation</Link></li>
-              <li><Link to="/financial-doctor" className="hover:text-foreground transition-colors">Art of Living Programs</Link></li>
+              <li><Link to="/financial-doctor" className="hover:text-foreground transition-colors">Financial Doctor</Link></li>
+              <li><Link to="/agent-recruitment" className="hover:text-foreground transition-colors">Agent Recruitment</Link></li>
+              <li><Link to="/services" className="hover:text-foreground transition-colors">Services Overview</Link></li>
+              <li><Link to="/consultation" className="hover:text-foreground transition-colors">Book a Consultation</Link></li>
             </ul>
           </div>
 
@@ -103,7 +89,7 @@ export default function Footer() {
         {/* Regulatory Disclosures & Copyright */}
         <div className="mt-12 pt-8 border-t border-border/40 text-xs space-y-4 text-muted-foreground/85 leading-relaxed">
           <p>
-            <strong>Regulatory Disclosures:</strong> N. SAKTHI (M.A., CIS., DME., FChFP., D.Acu., CIP) is an IRDAI Certified Chief Life Insurance Advisor (LIC of India) and a registered Mutual Fund Distributor (ARN Holder). Mutual Fund investments are subject to market risks; please read all scheme-related documents carefully before investing. Insurance is the subject matter of solicitation.
+            <strong>Regulatory Disclosures:</strong> Sakthi Financial Doctor (M.A., CIS., DME., FChFP., D.Acu., CIP) is an IRDAI Certified Chief Life Insurance Advisor (LIC of India) and a registered Mutual Fund Distributor (ARN Holder). Mutual Fund investments are subject to market risks; please read all scheme-related documents carefully before investing. Insurance is the subject matter of solicitation.
           </p>
           <p>
             Past performance of mutual funds does not guarantee future results. Insurance policies carry specific terms, exclusions, and conditions. All advisements are conducted under ethical fiduciary standards matching Chairman's Club and MDRT USA guidelines.

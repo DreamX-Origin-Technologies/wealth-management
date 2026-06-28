@@ -13,6 +13,11 @@ export default function Features() {
       desc: "Capital growth via SIP and Lumpsum options, tailored to map your long-term goals and risk profile (ARN Holder)."
     },
     {
+      icon: <ShieldCheck className="h-6 w-6 text-rose-600" />,
+      title: "Vehicle Insurance Solutions",
+      desc: "Comprehensive protection for cars, two-wheelers, commercial vehicles, and EVs with quick claims support and personalized guidance."
+    },
+    {
       icon: <Umbrella className="h-6 w-6 text-emerald-600" />,
       title: "Health & General Insurance",
       desc: "Top-tier health insurance covers and general asset shielding to insulate your savings against medical emergencies."
@@ -41,7 +46,7 @@ export default function Features() {
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
           <p className="text-sm font-semibold tracking-wider uppercase text-primary">Services Offered</p>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
-            Financial Doctor services for every stage of life
+            Sakthi Financial Doctor services for every stage of life
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             From protection to retirement, each solution is designed to bring clarity, comfort, and confidence to your family’s future.

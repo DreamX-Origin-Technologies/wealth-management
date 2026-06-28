@@ -16,20 +16,20 @@ export default function CTA() {
 
           <div className="text-center max-w-2xl mx-auto space-y-6">
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
-              Meet Your Financial Doctor
+              Know Your Financial Doctor
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Book a private consultation for insurance protection, mutual fund planning, retirement readiness, or family wealth guidance.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link to="/consultation" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full h-12 rounded-2xl font-semibold flex items-center justify-center gap-2">
+                <Button size="lg" className="w-full h-12 rounded-full font-semibold flex items-center justify-center gap-2 shadow-[0_16px_40px_-14px_rgba(15,23,42,0.35)]">
                   Book Consultation
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
               <Link to="/consultation" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="w-full h-12 rounded-2xl font-semibold">
+                <Button size="lg" variant="outline" className="w-full h-12 rounded-full font-semibold shadow-[0_10px_24px_-14px_rgba(15,23,42,0.2)]">
                   Visit Consultation Page
                 </Button>
               </Link>
